@@ -1,8 +1,8 @@
 import react from "react";
-import CreateDeck from "../CreateDeck";
-import NotFound from "../NotFound";
+import CreateDeck from "./CreateDeck";
+import NotFound from "../Layout/NotFound";
 import DeckList from "./DeckList";
-import Header from "../Comp/Header";
+import Header from "../Layout/Comp/Header";
 
 function home() {
   return;
