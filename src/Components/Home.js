@@ -19,16 +19,13 @@ function home() {
     }
     getDecks();
   }, []);
-  // useEffect(() => {
-  //   async function
-  // })
 
   return;
   <div>
     <Header />
     <CreateDeck />
     <Study />
-    <button />
+    <button type="delete" deleteDeck />
   </div>;
 }
 
