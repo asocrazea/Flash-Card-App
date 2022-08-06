@@ -1,10 +1,18 @@
-import react from "react";
+import react, { useEffect } from "react";
 import CreateDeck from "./CreateDeck";
-import NotFound from "../Layout/NotFound";
+import NotFound from "./NotFound";
 import DeckList from "./DeckList";
 import Header from "../Layout/Comp/Header";
 
 function home() {
+  const [decks, setDecks] = useState(DeckData);
+  useEffect(() => {
+    async function getDecks()
+  })
+  const deleteDeck = (indexToDelete) => {
+    setDecks((curDeck) => curDeck.filter((post, index) => index !== indexToDelete))
+  }
+
   return;
   <div>
     <Header />
