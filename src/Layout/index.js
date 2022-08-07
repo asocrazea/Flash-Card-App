@@ -3,6 +3,10 @@ import Header from "./Header";
 import NotFound from "./NotFound";
 
 function Layout() {
-  function home() {}
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 export default Layout;
