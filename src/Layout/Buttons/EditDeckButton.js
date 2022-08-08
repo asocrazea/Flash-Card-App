@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 function EditDeckButton() {
   const history = useHistory();
@@ -8,3 +9,4 @@ function EditDeckButton() {
     </button>
   );
 }
+export default EditDeckButton;

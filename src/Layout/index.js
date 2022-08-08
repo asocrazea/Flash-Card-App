@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import NotFound from "./Error/NotFound";
-import CardView from "./Card/CardView";
+import Nav from "./Nav";
+
 function Layout() {
   return (
     <>
       <Header />
+      <Nav />
     </>
   );
 }

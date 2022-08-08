@@ -3,7 +3,7 @@ import {
   deleteDeck,
   readDeck,
   updateDeck,
-} from "../utils/api/index";
+} from "../../utils/api/index";
 
 function form() {
   return (

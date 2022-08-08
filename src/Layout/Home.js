@@ -1,16 +1,15 @@
-import react, { useEffect } from "react";
+import react, { useEffect, useState } from "react";
 import CreateDeck from "./CreateDeck";
-import Header from "../Layout/Comp/Header";
+import Header from "../Layout/Header";
 import {
   listDecks,
   deleteDeck,
   readDeck,
   updateDeck,
 } from "../utils/api/index";
-import CardView from "./CardView";
 import Study from "./Study";
 
-function home() {
+function Home() {
   const [decks, setDecks] = useState(decks);
   useEffect(() => {
     async function getDecks() {
@@ -29,4 +28,4 @@ function home() {
   </div>;
 }
 
-export default home;
+export default Home;

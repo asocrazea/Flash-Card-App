@@ -1,5 +1,4 @@
 import React from "React";
-import NotFound from "./NotFound";
 
 function CardView() {
   return;
