@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./Layout";
+import EditDeck from "./Layout/";
 
 /**
  * App is a wrapper for <Layout>, you should not need to change this file.
@@ -11,7 +12,16 @@ function App() {
     <div className="app-routes">
       <Switch>
         <Route path="/">
-          <Layout />
+          <Home />
+        </Route>
+        <Route path="/decks/:deckId/study">
+          <Study />
+        </Route>
+        <Route path="decks/new">
+          <CreateDeck />
+        </Route>
+        <Route path="decks/:deckId/edit">
+          <EditDeck />
         </Route>
       </Switch>
     </div>
