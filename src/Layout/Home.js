@@ -1,12 +1,7 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CreateDeck from "./CreateDeck";
 import Header from "../Layout/Header";
-import {
-  listDecks,
-  deleteDeck,
-  readDeck,
-  updateDeck,
-} from "../utils/api/index";
+import { listDecks } from "../utils/api/index";
 import Study from "./Study";
 
 function Home() {
